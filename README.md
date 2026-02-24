@@ -1,6 +1,10 @@
 # GitHub + Claude Code: A Practical Guide
 
-> A hands-on reference for developers learning how to use GitHub and Claude Code together effectively.
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Made with Claude Code](https://img.shields.io/badge/Made%20with-Claude%20Code-blueviolet)](https://docs.anthropic.com/en/docs/claude-code)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
+A comprehensive, hands-on reference for developers learning to use **GitHub** and **Claude Code** together effectively. Covers core concepts, real workflows, prompt patterns, and professional best practices — from your first commit to shipping production features.
 
 ---
 
@@ -21,12 +25,20 @@
 
 ## What Is This?
 
-This repository is a **living guide** — a reference project you can return to as you grow your skills. It covers:
+This repository is a **living guide** — a structured reference you can return to at any stage of your development journey. Whether you are committing code for the first time or looking to tighten up your workflow, this guide covers the essentials.
 
-- How **GitHub** works as a collaboration and version control platform
-- How **Claude Code** works as an AI-powered coding assistant in your terminal
-- How they work **together** in a real development workflow
-- **Best practices** that professional developers follow
+| Topic | Coverage |
+|---|---|
+| **GitHub** | Version control, branching, pull requests, collaboration |
+| **Claude Code** | AI-assisted coding in the terminal, slash commands, prompt patterns |
+| **Combined Workflow** | End-to-end feature development using both tools together |
+| **Best Practices** | Commit conventions, PR standards, security habits, code review |
+
+### Who This Is For
+
+- Developers new to GitHub who want to build good habits from day one
+- Developers already using GitHub who want to add Claude Code to their workflow
+- Teams looking for a shared reference on conventions and best practices
 
 ---
 
@@ -511,23 +523,46 @@ gh pr create --title "feat: add user notification preferences"
 
 ## Learning Resources
 
-- [GitHub Docs](https://docs.github.com) — official GitHub documentation
-- [Claude Code Docs](https://docs.anthropic.com/en/docs/claude-code) — official Claude Code documentation
-- [Pro Git Book](https://git-scm.com/book/en/v2) — free, comprehensive Git reference
-- [Conventional Commits](https://www.conventionalcommits.org) — commit message standard
-- [GitHub Flow Guide](https://docs.github.com/en/get-started/using-github/github-flow) — branching strategy
+| Resource | Description |
+|---|---|
+| [GitHub Docs](https://docs.github.com) | Official GitHub documentation |
+| [Claude Code Docs](https://docs.anthropic.com/en/docs/claude-code) | Official Claude Code documentation |
+| [Pro Git Book](https://git-scm.com/book/en/v2) | Free, comprehensive Git reference (highly recommended) |
+| [Conventional Commits](https://www.conventionalcommits.org) | Commit message standard used industry-wide |
+| [GitHub Flow Guide](https://docs.github.com/en/get-started/using-github/github-flow) | GitHub's recommended branching strategy |
+| [GitHub Skills](https://skills.github.com) | Free interactive GitHub learning courses |
 
 ---
 
 ## Quick Tips
 
-- **Stuck on an error?** Paste the full error message into Claude Code and ask "what does this mean and how do I fix it?"
-- **Don't know where to start?** Ask Claude to "explore this codebase and tell me where I should look to implement X"
-- **Bad commit message?** Use `git commit --amend` (before pushing) to rewrite it
-- **Accidentally committed to main?** Create a branch from main, reset main — ask Claude Code to help
-- **PR getting too big?** Break it into smaller PRs — one feature, one PR
-- **Claude wrote something wrong?** Just tell it: "That's not quite right, here's what I actually need..."
+| Situation | What to Do |
+|---|---|
+| Stuck on an error | Paste the full error into Claude Code: "what does this mean and how do I fix it?" |
+| Don't know where to start | Ask Claude: "explore this codebase and tell me where I should look to implement X" |
+| Bad commit message | Use `git commit --amend` (before pushing) to rewrite it |
+| Accidentally committed to main | Create a branch from main, reset main — ask Claude Code to walk you through it |
+| PR getting too large | Break it into smaller PRs — one feature per PR |
+| Claude wrote something incorrect | Say: "That's not quite right, here's what I actually need..." and iterate |
+| Need to undo a pushed commit | Use `git revert <hash>` — it's safe and preserves history |
 
 ---
 
-*This guide is a living document. As you learn more, come back and add your own notes, examples, and discoveries.*
+## Contributing
+
+This is a living guide. If you find something unclear, out of date, or missing — open a PR. Contributions of any size are welcome.
+
+1. Fork the repository
+2. Create a branch: `git checkout -b docs/your-improvement`
+3. Make your changes and commit: `/commit`
+4. Open a pull request with a clear description
+
+---
+
+## License
+
+Released under the [MIT License](LICENSE). Free to use, share, and adapt.
+
+---
+
+*Built with [Claude Code](https://docs.anthropic.com/en/docs/claude-code). As you grow your skills, come back and add your own notes, examples, and discoveries.*
